@@ -718,7 +718,3 @@ body {
     align-self: end;
   }
 }
-
-[role="tab"]:focus {
-  color: limegreen;
-}
