@@ -692,8 +692,7 @@ body {
       ". image content .";
   }
 
-  .grid-container--destination > picture,
-  .grid-container--crew > picture {
+  .grid-container--destination > picture {
     max-width: 90%;
   }
 
@@ -703,18 +702,23 @@ body {
   }
 
   .grid-container--crew {
+    grid-template-columns: minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(
+        1rem,
+        1fr
+      );
+    justify-items: start;
     --flow-space: 2rem;
     grid-template-areas:
       ". title title ."
       ". content image ."
       ". tabs image .";
-  }
-
-  .grid-container--crew > .dot-indicators {
-    justify-self: start;
+    z-index: 1;
   }
 
   .grid-container--crew > picture {
+    grid-column: span 2;
     align-self: end;
+    max-width: 90%;
+    z-index: -1;
   }
 }
