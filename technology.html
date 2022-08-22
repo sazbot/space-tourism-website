@@ -106,7 +106,7 @@
         tabindex="0"
       >
         <header class="flow flow--space-small">
-          <h2 class="fs-600 ff-serif uppercase">The terminology...</h2>
+          <h2 class="fs-500 ff-sans-cond uppercase letter-spacing-2 text-accent">The terminology...</h2>
           <p class="fs-700 uppercase ff-serif"> Launch vehicle</p>
         </header>
         <p>
@@ -116,7 +116,65 @@
         </p>
       </article>
 
+      <article hidden
+        class="technology-details flow"
+        id="spaceport-tab"
+        role="tabpanel"
+        tabindex="0"
+      >
+        <header class="flow flow--space-small">
+          <h2 class="fs-500 ff-sans-cond uppercase letter-spacing-2 text-accent">The terminology...</h2>
+          <p class="fs-700 uppercase ff-serif"> Spaceport</p>
+        </header>
+        <p>
+          A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+          by analogy to the seaport for ships or airport for aircraft. Based in the 
+          famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+          of the Earth’s rotation for launch.
+        </p>
+      </article>
+
+      <article hidden
+        class="technology-details flow"
+        id="space-capsule-tab"
+        role="tabpanel"
+        tabindex="0"
+      >
+        <header class="flow flow--space-small">
+          <h2 class="fs-500 ff-sans-cond uppercase letter-spacing-2 text-accent">The terminology...</h2>
+          <p class="fs-700 uppercase ff-serif"> Space Capsule</p>
+        </header>
+        <p>
+          A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+          capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+          you'll spend your time during the flight. It includes a space gym, cinema, 
+          and plenty of other activities to keep you entertained.
+        </p>
+      </article>
+
       <!-- Images -->
-        <img id="launch-vehicle-image" src="assets/technology/image-launch-vehicle-landscape.jpg" alt="Launch Vehicle" />
+        <picture id="launch-vehicle-image">
+          <source
+            srcset="assets/technology/image-launch-vehicle-landscape.jpg"
+            type="image/webp"
+          />
+          <img src="assets/technology/image-launch-vehicle-landscape.jpg" alt="Launch Vehicle" />
+        </picture>
+
+        <picture hidden id="spaceport-image">
+          <source
+            srcset="assets/technology/image-spaceport-landscape.jpg"
+            type="image/webp"
+          />
+          <img src="assets/technology/image-spaceport-landscape.jpg" alt="Spaceport" />
+        </picture>
+
+        <picture hidden id="space-capsule-image">
+          <source
+            srcset="assets/technology/image-space-capsule-landscape.jpg"
+            type="image/webp"
+          />
+          <img src="assets/technology/image-space-capsule-landscape.jpg" alt="Space Capsule" />
+        </picture>
   </body>
 </html>
