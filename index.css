@@ -695,7 +695,7 @@ body {
   grid-area: image;
 }
 
-.grid-container--technology > .dot-indicators {
+.grid-container--technology > .numbered-indicators {
   grid-area: tabs;
 }
 
@@ -816,24 +816,26 @@ body {
 
   /* technology */
   .grid-container--technology {
-    grid-template-columns: minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(
-        1rem,
-        1fr
-      );
+    grid-template-columns:
+      minmax(1rem, 1fr) minmax(0, 6rem) minmax(0, 37rem) minmax(0, 23rem)
+      minmax(1rem, 1fr);
     justify-items: start;
     --flow-space: 2rem;
     grid-template-areas:
-      ". title title ."
-      ". content image ."
-      ". tabs image .";
+      ". title title image ."
+      ". tabs content image ."
+      ". tabs content image .";
     z-index: 1;
   }
 
   .grid-container--technology > picture {
     grid-column: span 2;
-    align-self: end;
-    max-width: 90%;
+    align-self: center;
     z-index: -1;
+  }
+
+  .grid-container--technology > .numbered-indicators {
+    flex-direction: column;
   }
 
   .technology-details > p:last-child {
