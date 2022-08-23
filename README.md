@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/space-tourism-multipage-website-using-vanilla-js-iw5yIpgBvq](https://www.frontendmentor.io/solutions/space-tourism-multipage-website-using-vanilla-js-iw5yIpgBvq)
 - Live Site URL: [https://sazbot.github.io/space-tourism-website/](https://sazbot.github.io/space-tourism-website/)
 
 ## My process
