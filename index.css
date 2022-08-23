@@ -718,6 +718,7 @@ body {
   .numbered-title {
     justify-self: start;
     margin-top: 2rem;
+    margin-left: 2rem;
   }
 
   .destination-meta {
@@ -745,6 +746,10 @@ body {
         2rem,
         1fr
       );
+  }
+
+  .numbered-title {
+    margin-left: 0;
   }
 
   /* home */
